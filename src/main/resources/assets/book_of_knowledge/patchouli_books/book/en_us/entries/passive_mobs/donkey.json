@@ -1,0 +1,20 @@
+﻿{
+  "name": "Donkey",
+  "icon": "book_of_knowledge:textures/gui/passive_mobs/donkey.png",
+  "category": "book_of_knowledge:passive_mobs",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Donkey",
+      "text": "A donkey is a passive mob that can be ridden and can carry chests for storage.$(br)$(l)Health:$() 15 (7.5 hearts)$(br)$(l)Behavior:$() Passive",
+      "left_page": true
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:donkey",
+      "scale": 0.6,
+      "offset": -0.2,
+      "right_page": true
+    }
+  ]
+}

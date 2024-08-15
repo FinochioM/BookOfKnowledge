@@ -1,0 +1,28 @@
+﻿{
+  "name": "Allay",
+  "icon": "book_of_knowledge:textures/gui/passive_mobs/allay.png",
+  "category": "book_of_knowledge:passive_mobs",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Allay",
+      "text": "The allay is a flying passive mob that collects and delivers items for any player that gives it something or any note block it hears recently playing.$(br)$(l)Health:$() 20 (10 hearts)$(br)$(l)Behaviour:$() Passive",
+      "left_page": true
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:allay",
+      "scale": 1,
+      "offset": -0.2,
+      "right_page": true
+    },
+    {
+      "type": "patchouli:image",
+      "title": "Allay Snapshot",
+      "images": [
+        "book_of_knowledge:textures/gui/passive_mobs/allay.png"
+      ],
+      "border": true
+    }
+  ]
+}

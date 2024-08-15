@@ -1,0 +1,20 @@
+﻿{
+  "name": "Pig",
+  "icon": "book_of_knowledge:textures/gui/passive_mobs/pig.png",
+  "category": "book_of_knowledge:passive_mobs",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Pig",
+      "text": "Pigs are common passive mobs that drop porkchops.$(br)$(l)Health:$() 10 (5 hearts)$(br)$(l)Behaviour:$() Passive",
+      "left_page": true
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:pig",
+      "scale": 0.6,
+      "offset": -0.2,
+      "right_page": true
+    }
+  ]
+}

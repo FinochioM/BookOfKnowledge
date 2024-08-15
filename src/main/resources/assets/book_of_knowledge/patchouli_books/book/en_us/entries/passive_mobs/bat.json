@@ -1,0 +1,20 @@
+﻿{
+  "name": "Bat",
+  "icon": "book_of_knowledge:textures/gui/passive_mobs/bat.png",
+  "category": "book_of_knowledge:passive_mobs",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "at",
+      "text": "A bat is a flying ambient[1] passive mob that spawns in dark areas underground on caves.$(br)$(l)Health:$() 6 (3 hearts)$(br)$(l)Behaviour:$() Passive",
+      "left_page": true
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:bat",
+      "scale": 0.6,
+      "offset": -0.2,
+      "right_page": true
+    }
+  ]
+}

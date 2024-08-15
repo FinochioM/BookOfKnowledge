@@ -1,0 +1,20 @@
+﻿{
+  "name": "Snow Golem",
+  "icon": "book_of_knowledge:textures/gui/passive_mobs/snow_golem.png",
+  "category": "book_of_knowledge:passive_mobs",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Snow Golem",
+      "text": "Snow Golems are utility mobs created by players.$(br)$(l)Health:$() 4 (2 hearts)$(br)$(l)Behaviour:$() Passive, Attacks hostile mobs",
+      "left_page": true
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:snow_golem",
+      "scale": 0.6,
+      "offset": -0.2,
+      "right_page": true
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+﻿{
+  "name": "Horse",
+  "icon": "book_of_knowledge:textures/gui/passive_mobs/horse.png",
+  "category": "book_of_knowledge:passive_mobs",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Horse",
+      "text": "Horses are passive mobs that can be ridden and tamed.$(br)$(l)Health:$() 15-30 (7.5-15 hearts)$(br)$(l)Behaviour:$() Passive, Tameable",
+      "left_page": true
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:horse",
+      "scale": 0.6,
+      "offset": -0.2,
+      "right_page": true
+    }
+  ]
+}

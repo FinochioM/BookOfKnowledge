@@ -1,0 +1,20 @@
+﻿{
+  "name": "Villager",
+  "icon": "book_of_knowledge:textures/gui/passive_mobs/villager.png",
+  "category": "book_of_knowledge:passive_mobs",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Villager",
+      "text": "Villagers are passive mobs that can trade with players.$(br)$(l)Health:$() 20 (10 hearts)$(br)$(l)Behaviour:$() Passive",
+      "left_page": true
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:villager",
+      "scale": 0.6,
+      "offset": -0.2,
+      "right_page": true
+    }
+  ]
+}

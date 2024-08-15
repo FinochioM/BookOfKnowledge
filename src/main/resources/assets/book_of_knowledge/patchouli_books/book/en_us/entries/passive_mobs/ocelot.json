@@ -1,0 +1,20 @@
+﻿{
+  "name": "Ocelot",
+  "icon": "book_of_knowledge:textures/gui/passive_mobs/ocelot.png",
+  "category": "book_of_knowledge:passive_mobs",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Ocelot",
+      "text": "Ocelots are passive mobs that spawn in jungles.$(br)$(l)Health:$() 10 (5 hearts)$(br)$(l)Behaviour:$() Passive, Can be tamed",
+      "left_page": true
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:ocelot",
+      "scale": 0.6,
+      "offset": -0.2,
+      "right_page": true
+    }
+  ]
+}

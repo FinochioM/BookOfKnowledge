@@ -1,0 +1,20 @@
+﻿{
+  "name": "Strider",
+  "icon": "book_of_knowledge:textures/gui/passive_mobs/strider.png",
+  "category": "book_of_knowledge:passive_mobs",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Strider",
+      "text": "Striders are passive mobs that spawn in the Nether and can walk on lava.$(br)$(l)Health:$() 20 (10 hearts)$(br)$(l)Behaviour:$() Passive",
+      "left_page": true
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:strider",
+      "scale": 0.6,
+      "offset": -0.2,
+      "right_page": true
+    }
+  ]
+}

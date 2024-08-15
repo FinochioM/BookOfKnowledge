@@ -1,0 +1,20 @@
+﻿{
+  "name": "Sheep",
+  "icon": "book_of_knowledge:textures/gui/passive_mobs/sheep.png",
+  "category": "book_of_knowledge:passive_mobs",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Sheep",
+      "text": "Sheep are passive mobs that drop wool and mutton.$(br)$(l)Health:$() 8 (4 hearts)$(br)$(l)Behaviour:$() Passive",
+      "left_page": true
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:sheep",
+      "scale": 0.6,
+      "offset": -0.2,
+      "right_page": true
+    }
+  ]
+}

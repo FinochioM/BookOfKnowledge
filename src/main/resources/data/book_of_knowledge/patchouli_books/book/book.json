@@ -1,0 +1,9 @@
+﻿{
+  "name": "Book of Knowledge",
+  "landing_text": "With this book you can learn as you play the game. All the progress you make about mobs, blocks, items, etc will be saved here and you'll be able to find information about them.",
+  "version": 0.2,
+  "creative_tab": "minecraft:tools_and_utilities",
+  "show_progress": false,
+  "book_texture": "patchouli:textures/gui/book_green.png",
+  "use_resource_pack": true
+}

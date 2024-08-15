@@ -1,0 +1,20 @@
+﻿{
+  "name": "Frog",
+  "icon": "book_of_knowledge:textures/gui/passive_mobs/frog.png",
+  "category": "book_of_knowledge:passive_mobs",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Frog",
+      "text": "A frog is a passive mob that spawns in swamp and mangrove biomes. They can be bred using slimeballs.$(br)$(l)Health:$() 10 (5 hearts)$(br)$(l)Behavior:$() Passive",
+      "left_page": true
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:frog",
+      "scale": 0.6,
+      "offset": -0.2,
+      "right_page": true
+    }
+  ]
+}

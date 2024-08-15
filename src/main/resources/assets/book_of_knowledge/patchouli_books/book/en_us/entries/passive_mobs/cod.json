@@ -1,0 +1,20 @@
+﻿{
+  "name": "Cod",
+  "icon": "book_of_knowledge:textures/gui/passive_mobs/cod.png",
+  "category": "book_of_knowledge:passive_mobs",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Cod",
+      "text": "A cod is a passive fish mob that can be found in oceans. They are a common source of fish for food.$(br)$(l)Health:$() 3 (1.5 hearts)$(br)$(l)Behavior:$() Passive",
+      "left_page": true
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:cod",
+      "scale": 0.6,
+      "offset": -0.2,
+      "right_page": true
+    }
+  ]
+}

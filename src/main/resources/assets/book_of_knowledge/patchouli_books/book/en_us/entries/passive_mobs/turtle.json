@@ -1,0 +1,20 @@
+﻿{
+  "name": "Turtle",
+  "icon": "book_of_knowledge:textures/gui/passive_mobs/turtle.png",
+  "category": "book_of_knowledge:passive_mobs",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Turtle",
+      "text": "Turtles are passive mobs that lay eggs and can be bred.$(br)$(l)Health:$() 30 (15 hearts)$(br)$(l)Behaviour:$() Passive",
+      "left_page": true
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:turtle",
+      "scale": 0.6,
+      "offset": -0.2,
+      "right_page": true
+    }
+  ]
+}

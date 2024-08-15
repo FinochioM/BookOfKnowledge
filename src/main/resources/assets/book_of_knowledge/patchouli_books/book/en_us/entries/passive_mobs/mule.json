@@ -1,0 +1,20 @@
+﻿{
+  "name": "Mule",
+  "icon": "book_of_knowledge:textures/gui/passive_mobs/mule.png",
+  "category": "book_of_knowledge:passive_mobs",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Mule",
+      "text": "Mules are passive mobs that can be used as mounts and for storage.$(br)$(l)Health:$() 15-30 (7.5-15 hearts)$(br)$(l)Behaviour:$() Passive, Tameable",
+      "left_page": true
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:mule",
+      "scale": 0.6,
+      "offset": -0.2,
+      "right_page": true
+    }
+  ]
+}

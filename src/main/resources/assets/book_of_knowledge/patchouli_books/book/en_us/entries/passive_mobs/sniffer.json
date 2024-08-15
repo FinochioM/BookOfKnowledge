@@ -1,0 +1,20 @@
+﻿{
+  "name": "Sniffer",
+  "icon": "book_of_knowledge:textures/gui/passive_mobs/sniffer.png",
+  "category": "book_of_knowledge:passive_mobs",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Sniffer",
+      "text": "Sniffers are ancient passive mobs that dig up seeds.$(br)$(l)Health:$() 14 (7 hearts)$(br)$(l)Behaviour:$() Passive",
+      "left_page": true
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:sniffer",
+      "scale": 0.6,
+      "offset": -0.2,
+      "right_page": true
+    }
+  ]
+}

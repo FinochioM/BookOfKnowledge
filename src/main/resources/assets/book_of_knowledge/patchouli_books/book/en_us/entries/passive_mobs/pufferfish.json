@@ -1,0 +1,20 @@
+﻿{
+  "name": "Pufferfish",
+  "icon": "book_of_knowledge:textures/gui/passive_mobs/pufferfish.png",
+  "category": "book_of_knowledge:passive_mobs",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Pufferfish",
+      "text": "Pufferfish are passive aquatic mobs that inflate when approached.$(br)$(l)Health:$() 3 (1.5 hearts)$(br)$(l)Behaviour:$() Passive, Poisonous",
+      "left_page": true
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:pufferfish",
+      "scale": 0.6,
+      "offset": -0.2,
+      "right_page": true
+    }
+  ]
+}

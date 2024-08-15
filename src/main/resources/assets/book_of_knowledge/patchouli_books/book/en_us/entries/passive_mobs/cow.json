@@ -1,0 +1,20 @@
+﻿{
+  "name": "Cow",
+  "icon": "book_of_knowledge:textures/gui/passive_mobs/cow.png",
+  "category": "book_of_knowledge:passive_mobs",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Cow",
+      "text": "A cow is a common passive mob that can be farmed for leather, milk, and meat.$(br)$(l)Health:$() 10 (5 hearts)$(br)$(l)Behavior:$() Passive",
+      "left_page": true
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:cow",
+      "scale": 0.6,
+      "offset": -0.2,
+      "right_page": true
+    }
+  ]
+}

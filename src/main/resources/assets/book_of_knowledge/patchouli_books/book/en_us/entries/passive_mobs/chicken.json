@@ -1,0 +1,20 @@
+﻿{
+  "name": "Chicken",
+  "icon": "book_of_knowledge:textures/gui/passive_mobs/chicken.png",
+  "category": "book_of_knowledge:passive_mobs",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Chicken",
+      "text": "A chicken is a common passive mob that lays eggs and can be farmed for feathers and meat.$(br)$(l)Health:$() 4 (2 hearts)$(br)$(l)Behavior:$() Passive",
+      "left_page": true
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:chicken",
+      "scale": 0.6,
+      "offset": -0.2,
+      "right_page": true
+    }
+  ]
+}

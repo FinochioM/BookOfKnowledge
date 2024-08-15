@@ -1,0 +1,20 @@
+﻿{
+  "name": "Cat",
+  "icon": "book_of_knowledge:textures/gui/passive_mobs/cat.png",
+  "category": "book_of_knowledge:passive_mobs",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Cat",
+      "text": "A cat is a passive mob found in villages and swamp huts. They scare away creepers and phantoms.$(br)$(l)Health:$() 10 (5 hearts)$(br)$(l)Behavior:$() Passive",
+      "left_page": true
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:cat",
+      "scale": 0.6,
+      "offset": -0.2,
+      "right_page": true
+    }
+  ]
+}
