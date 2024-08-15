@@ -38,63 +38,12 @@ public class CameraItem extends Item {
             MinecraftClient client = MinecraftClient.getInstance();
             
             if (hudActive){
-                /*if (client.player != null && client.player.getMainHandStack().getItem() instanceof CameraItem){
-                    Framebuffer framebuffer = client.getFramebuffer();
-                    File screenshotDir = new File(client.runDirectory,"screenshots");
-
-                    if (!screenshotDir.exists()) screenshotDir.mkdirs();
-
-                    ScreenshotRecorder.saveScreenshot(screenshotDir, framebuffer, (message) -> {
-                        user.sendMessage(Text.literal(message.getString()), false);
-                    });
-                }*/
                 user.sendMessage(Text.literal("Camera HUD activated"), true);
             }else {
                 user.sendMessage(Text.literal("Camera HUD deactivated"), true);
             }
-
-            Entity targetEntity = getTargetEntity(user, 20.0);
-            
-            if (targetEntity instanceof LivingEntity){
-                user.sendMessage(Text.literal("You are looking at: " + targetEntity.getName().getString()), true);
-            }else {
-                user.sendMessage(Text.literal("You are not looking at a living entity"), true);
-            }
         }
         return TypedActionResult.success(user.getStackInHand(hand));
-    }
-    
-    private Entity getTargetEntity(PlayerEntity player, double maxDistance){
-        Vec3d startVec = player.getCameraPosVec(1.0f);
-        Vec3d lookVec = player.getRotationVec(1.0f);
-        Vec3d endVec = startVec.add(lookVec.multiply(maxDistance));
-
-        Box box = player.getBoundingBox().stretch(lookVec.multiply(maxDistance)).expand(1.0, 1.0, 1.0);
-        List<Entity> entities = player.getEntityWorld().getOtherEntities(player, box);
-        
-        Entity closestEntity = null;
-        double closestDistance = maxDistance;
-        
-        for (Entity entity : entities){
-            Box entityBox = entity.getBoundingBox().expand(entity.getTargetingMargin());
-            Optional<Vec3d> hitResult = entityBox.raycast(startVec, endVec);
-            
-            if (entityBox.contains(startVec)){
-                if(closestDistance >= 0.0){
-                    closestEntity = entity;
-                    closestDistance = 0.0;
-                }
-            }else if (hitResult.isPresent()){
-                double distance = startVec.squaredDistanceTo(hitResult.get());
-                
-                if (distance < closestDistance || closestDistance == 0.0){
-                    closestEntity = entity;
-                    closestDistance = distance;
-                }
-            }
-        }
-        
-        return closestEntity;
     }
     
     public static boolean isHudActive(){
