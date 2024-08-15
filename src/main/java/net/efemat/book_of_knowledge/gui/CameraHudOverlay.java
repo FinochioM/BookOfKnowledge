@@ -33,12 +33,15 @@ public class CameraHudOverlay implements HudRenderCallback {
             int width = client.getWindow().getScaledWidth();
             int height = client.getWindow().getScaledHeight();
             
-            drawContext.drawTexture(CAMERA_OVERLAY_TEXTURE, 0, 0, 0, 0, width, height, width, height);
+            //drawContext.drawTexture(CAMERA_OVERLAY_TEXTURE, 0, 0, 0, 0, width, height, width, height);
 
             Entity targetEntity = getTargetEntity(client.player, 20.0);
-            
-            if (targetEntity instanceof LivingEntity){
-                renderEntityOnScreen(drawContext.getMatrices(), - 50, height -75, 30, (LivingEntity) targetEntity, tickDelta);
+
+            if (targetEntity instanceof LivingEntity) {
+                int xPos = width - 50; // 50 pixels from the right edge
+                int yPos = 75; // 75 pixels from the top edge
+                int entitySize = 30; // Size of the rendered entity
+                renderEntityOnScreen(drawContext.getMatrices(), xPos, yPos, entitySize, (LivingEntity) targetEntity, tickDelta);
                 client.player.sendMessage(Text.literal("Entity found: " + targetEntity.getName().getString()), true);
             }
         }
@@ -76,29 +79,30 @@ public class CameraHudOverlay implements HudRenderCallback {
         float previousYaw = entity.getYaw();
         float previousPitch = entity.getPitch();
 
-        // Adjust the entity's rotation to face the screen
-        entity.setYaw(0.0F);
+        // Set the entity's rotation to face the screen
+        entity.setYaw(180.0F);  // Rotate entity 180 degrees to face forward
         entity.setPitch(0.0F);
 
-        // Translate and scale the entity
+        // Push matrix to preserve other transformations
         matrices.push();
-        matrices.translate(x, y, 1050.0F);
-        matrices.scale(size, size, -size);
 
-        // Apply rotation to make the entity face the player
-        Quaternionf rotation = new Quaternionf().rotateZ((float) Math.toRadians(180.0F));
-        matrices.multiply(rotation);
+        // Translate to top-right corner and scale the entity
+        matrices.translate(x, y, 1050.0F);
+        matrices.scale((float) size, (float) size, (float) size);
+
+        // Rotate the entity to face the camera
+        matrices.multiply(new Quaternionf().rotateZ((float) Math.PI));  // 180 degrees rotation around the Z axis
 
         // Render the entity on the screen
         entityRenderDispatcher.setRenderShadows(false);
         entityRenderDispatcher.render(entity, 0.0, 0.0, 0.0, 0.0F, tickDelta, matrices, MinecraftClient.getInstance().getBufferBuilders().getEntityVertexConsumers(), 15728880);
         entityRenderDispatcher.setRenderShadows(true);
 
-        // Restore the previous pitch and yaw
+        // Restore the entity's previous rotation
         entity.setYaw(previousYaw);
         entity.setPitch(previousPitch);
 
-        // Pop the matrix to restore the previous state
+        // Pop the matrix stack to restore the previous state
         matrices.pop();
     }
 }
